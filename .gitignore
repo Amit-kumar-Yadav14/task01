@@ -9,7 +9,7 @@ venv/
 .venv/
 *.DS_Store
 .ipynb_checkpoints/
-data/processed/*.csv
-outputs/*.png
-outputs/*.json
+# data/processed/*.csv
+# outputs/*.png
+# outputs/*.json
 !data/raw/employee_data_raw.csv

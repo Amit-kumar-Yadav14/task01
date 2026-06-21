@@ -1,0 +1,43 @@
+{
+  "pipeline": "DecodeLabs DS Project 1 \u2014 Advanced EDA & Feature Engineering",
+  "batch": "2026",
+  "raw_shape": [
+    1000,
+    13
+  ],
+  "final_shape": [
+    970,
+    26
+  ],
+  "rows_retained_pct": 97.0,
+  "new_features_added": 7,
+  "schema_valid": true,
+  "null_count_final": 0,
+  "engineered_features": [
+    "salary_per_year_exp",
+    "productivity_index",
+    "experience_age_ratio",
+    "training_investment_score",
+    "satisfaction_performance_composite",
+    "seniority_band",
+    "overwork_flag"
+  ],
+  "pipeline_phases": {
+    "Phase 1 \u2014 Input Fidelity": [
+      "Missing value audit",
+      "3-tier Decision Matrix",
+      "IQR Winsorization"
+    ],
+    "Phase 2 \u2014 Computation Engine": [
+      "7 vectorized features",
+      "OHE categorical encoding",
+      "Collinearity eradication",
+      "StandardScaler"
+    ],
+    "Phase 3 \u2014 Contracts": [
+      "Pandera schema (lazy=True)",
+      "Runtime type+boundary checks",
+      "JSON report export"
+    ]
+  }
+}
