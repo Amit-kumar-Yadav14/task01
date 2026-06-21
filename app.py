@@ -11,7 +11,6 @@ st.markdown("### DecodeLabs Industrial Training Kit · Batch 2026")
 st.markdown("---")
 
 # 1. Load Data
-@st.cache_data
 def load_data(path):
     if os.path.exists(path):
         return pd.read_csv(path)
